@@ -1,12 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub User Search</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <h1>Welcome to the Test Project</h1>
+  <main class="container">
+    <h1>GitHub User Search</h1>
+    <p>Discover developers around the world.</p>
+
+    <input
+      type="search"
+      id="searchInput"
+      placeholder="Search GitHub username..."
+      autocomplete="off"
+      aria-label="Search GitHub username"
+    >
+
+    <p id="status" role="status" aria-live="polite">
+      Try searching for octocat.
+    </p>
+
+    <section id="results" class="results"
+      aria-label="GitHub user results">
+    </section>
+  </main>
 </body>
 </html>
